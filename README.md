@@ -12,17 +12,18 @@ HikaShop Dimensions and Weight View Plugin for Joomla! This plugin enables you t
 ## Plugin configuration
 
 You can set the way the plugin will display dimensions and weight information of products  :
-- `1` : choose 'information in 1 line' you want to display information in 1 line
-- `2` : choose 'information in 4 line' you want to display information in 4 line
+- choose 'information in 1 line' if you want to display information in 1 line
+- choose 'information in 4 line' if you want to display information in 4 line
 
-![Parameters of the plugin](/docs/captures/debug0.png "Parameters of the plugin")
+![Parameters of the plugin](/docs/captures/1.png "Parameters of the plugin")
 
 ## The work of the plugin
 
-Go to "Components -> HikaShop -> Orders" and choose any order
+Go to "Components -> HikaShop -> Orders" and choose any order. 
+See the column "Weight and dimensions" in the table "Product list"
 
 ### 'information in 1 line'
-![Parameters of the plugin](/docs/captures/debug1.png "Parameters of the plugin")
+![Information in 1 line](/docs/captures/2.png "Information in 1 line")
 
 ### 'information in 4 line'
-![Parameters of the plugin](/docs/captures/debug2.png "Parameters of the plugin")
+![Information in 4 line](/docs/captures/3.png "Information in 4 line")
