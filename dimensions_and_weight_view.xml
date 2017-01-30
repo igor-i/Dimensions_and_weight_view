@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="hikashop">
+	<name>HikaShop Dimensions and Weight View Plugin</name>
+	<creationDate>30.01.2017</creationDate>
+	<version>1.0</version>
+	<author>Igor Inkovskiy</author>
+	<authorEmail>igor-i-shop@ya.ru</authorEmail>
+	<authorUrl>http://igor-i.tmweb.ru</authorUrl>
+	<copyright>(C) 2017 Igor Inkovskiy</copyright>
+	<license>Beerware</license>
+	<description>This plugin enables you to view dimensions and weight of products in orders</description>
+	<files>
+		<filename plugin="dimensions_and_weight_view">dimensions_and_weight_view.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="display_type" type="radio" default="0" label="Способ отображения" description="Выводить информацию в одну строку или в четыре строки?">
+			<option value="0">
+				В одну строку. Пример: 1.6 kg, 5х27х35 cm
+			</option>
+			<option value="1">
+				В четыре строки. Пример:<br/>
+				Вес: 1.6 kg<br/>
+				Ширина: 5 cm<br/>
+				Длина: 27 cm<br/>
+				Высота: 35 cm
+			</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field name="display_type" type="radio" default="0" label="Способ отображения" description="Выводить информацию в одну строку или в четыре строки?">
+					<option value="0">
+						В одну строку. Пример: 1.6 kg, 5х27х35 cm
+					</option>
+					<option value="1">
+						В четыре строки. Пример:
+						Вес: 1.6 kg
+						Ширина: 5 cm
+						Длина: 27 cm
+						Высота: 35 cm
+					</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
