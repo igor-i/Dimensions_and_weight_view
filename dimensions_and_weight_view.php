@@ -60,7 +60,7 @@ class plgHikashopDimensions_and_weight_view extends JPlugin {
                 $length = $this->formatDimension($view->products[$item->product_id]->product_length);
                 $height = $this->formatDimension($view->products[$item->product_id]->product_height);
                 if (empty($this->pluginConfig->display_type)) {
-                    $jscript .= "var tdHTML$key = '<td>$weight $weightUnit, $width" . "x" . $length . "x" . "$height $widthUnit </td>'; ";
+                    $jscript .= "var tdHTML$key = '<td>$weight <small>$weightUnit</small>, $width" . "<small>x</small>" . $length . "<small>x</small>" . "$height <small>$widthUnit</small> </td>'; ";
                 } else {
                     $jscript .= <<<HTML
                             var tdHTML$key = '' +
