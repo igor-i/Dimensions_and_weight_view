@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" version="2.5" method="upgrade" group="hikashop">
 	<name>HikaShop Dimensions and Weight View Plugin</name>
-	<creationDate>30.01.2017</creationDate>
-	<version>1.0</version>
+	<creationDate>01.03.2017</creationDate>
+	<version>1.1</version>
 	<author>Igor Inkovskiy</author>
 	<authorEmail>igor-i-shop@ya.ru</authorEmail>
-	<authorUrl>http://igor-i.tmweb.ru</authorUrl>
+	<authorUrl>http://shop.igor-i.ru</authorUrl>
 	<copyright>(C) 2017 Igor Inkovskiy</copyright>
 	<license>Beerware</license>
 	<description>This plugin enables you to view dimensions and weight of products in orders</description>
@@ -45,4 +45,9 @@
 			</fieldset>
 		</fields>
 	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="HikaShop Dimensions and Weight view plugin Updates">
+			http://shop.igor-i.ru/update/free-license/dimensions_and_weight_view.xml
+		</server>
+	</updateservers>
 </extension>
